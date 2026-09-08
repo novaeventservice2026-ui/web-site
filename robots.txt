@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://novaeventservice.it/sitemap.xml
+Sitemap: https://www.novaeventservice.it/sitemap.xml
