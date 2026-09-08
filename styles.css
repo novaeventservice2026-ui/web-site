@@ -467,3 +467,22 @@ svg.cta-icon { width: 28px; height: 28px; }
 @media (max-width: 640px) {
   .hero-image { background-image: linear-gradient(180deg, rgba(3,3,10,.78) 0%, rgba(3,3,10,.5) 42%, rgba(3,3,10,.88) 100%), url('hero-concert.jpg?v=7'); background-position: center; }
 }
+
+/* ===== Popup contatti (Email / WhatsApp) ===== */
+.contact-modal { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.contact-modal[hidden] { display: none !important; }
+.cm-backdrop { position: absolute; inset: 0; background: rgba(3,3,10,.74); backdrop-filter: blur(4px); }
+.cm-box { position: relative; z-index: 1; width: min(430px, 100%); background: #0c0c14; border: 1px solid var(--border); border-radius: 18px; padding: 30px 26px 26px; box-shadow: 0 30px 80px rgba(0,0,0,.6); animation: cmIn .25s cubic-bezier(.2,.7,.2,1); }
+@keyframes cmIn { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }
+.cm-close { position: absolute; top: 12px; right: 14px; width: 34px; height: 34px; border: none; background: transparent; color: #b6b6c2; font-size: 24px; line-height: 1; cursor: pointer; border-radius: 8px; }
+.cm-close:hover { background: rgba(255,255,255,.06); color: #fff; }
+.cm-title { margin: 0 0 5px; font-size: 20px; font-weight: 700; color: #fff; }
+.cm-sub { margin: 0 0 20px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.cm-actions { display: flex; flex-direction: column; gap: 12px; }
+.cm-btn { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: rgba(255,255,255,.02); transition: border-color .2s ease, transform .2s ease, background .2s ease; }
+.cm-btn:hover { border-color: #2f7bff; transform: translateX(3px); background: rgba(16,125,255,.06); }
+.cm-btn svg { flex-shrink: 0; width: 26px; height: 26px; }
+.cm-mail svg { color: #588eff; }
+.cm-wa svg { color: #25d366; }
+.cm-btn span { display: block; font-size: 15px; font-weight: 700; color: #fff; }
+.cm-btn small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
