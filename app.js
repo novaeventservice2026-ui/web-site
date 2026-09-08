@@ -6,6 +6,22 @@
       window.lucide.createIcons();
     }
 
+    // Menu mobile (hamburger)
+    var header = document.querySelector('.site-header');
+    var toggle = document.querySelector('.nav-toggle');
+    if (header && toggle) {
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      header.querySelectorAll('nav a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          header.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
     // Slider delle card DJ (4 pagine: Foto / Bio / Video / Social)
     document.querySelectorAll('.dj-card').forEach(function (card) {
       var track = card.querySelector('.dj-card-track');
