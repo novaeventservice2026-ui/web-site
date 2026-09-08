@@ -50,7 +50,7 @@
 
       var triggers = document.querySelectorAll('a[href^="mailto:novaeventservice2026"], a[href$="#contatti"]');
       triggers.forEach(function (a) {
-        if (a.closest('.contact-actions')) return; // i pulsanti già-scelta restano diretti
+        if (a.closest('.contact-actions') || a.closest('.contact-modal')) return; // i pulsanti già-scelta (e quelli DENTRO il popup) restano diretti
         a.addEventListener('click', function (e) {
           e.preventDefault();
           if (header) header.classList.remove('nav-open');
