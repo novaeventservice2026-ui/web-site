@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / tooling
+.claude/
+.vscode/
+
+# Archivi
+*.zip
+
+# Dipendenze e build (non servono per il sito statico)
+node_modules/
+dist/
+.next/
+.vinext/
+.wrangler/
+.openai/

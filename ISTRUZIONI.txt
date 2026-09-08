@@ -1,0 +1,38 @@
+NOVA EVENT SERVICE — SITO STATICO (per Wix / hosting statico)
+=============================================================
+
+Contenuto (versione statica completa e aggiornata del sito):
+- index.html ............ Home (schermata d'impatto con animazioni)
+- servizi.html
+- come-lavoriamo.html
+- artisti.html .......... con slider DJ e video Instagram
+- pacchetti.html
+- chi-siamo.html
+- styles.css ............ tutti gli stili
+- app.js ................ slider dei DJ + icone
+- nova-logo.png, nova-hero.png, favicon, cartella /artisti (foto DJ)
+
+Il sito usa 3 risorse esterne (servono per funzionare, si caricano da internet):
+- Font Geist (Google Fonts)
+- Icone (unpkg.com/lucide)
+- Player video (instagram.com/embed.js)
+
+COME PUBBLICARE
+---------------
+Questo è un sito statico "puro" (HTML/CSS/JS). Funziona su qualunque hosting statico
+caricando l'INTERO contenuto di questa cartella (mantenendo la sottocartella /artisti).
+
+• Se il tuo pannello Wix offre l'importazione/caricamento di un sito statico,
+  carica il file .zip oppure tutti i file di questa cartella, con index.html come pagina iniziale.
+
+• In alternativa (consigliato per siti in codice) lo stesso pacchetto si pubblica in 1 minuto su:
+  - Cloudflare Pages  (pages.cloudflare.com)
+  - Netlify           (app.netlify.com/drop  -> trascini la cartella)
+  - GitHub Pages
+  e poi colleghi il tuo dominio.
+
+NOTE
+----
+- I link tra le pagine sono relativi (servizi.html, artisti.html, ...): non spostare i file
+  fuori dalla cartella e non rinominarli.
+- I recapiti (email e WhatsApp) e i social dei DJ sono già quelli reali.
