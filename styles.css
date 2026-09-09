@@ -486,3 +486,17 @@ svg.cta-icon { width: 28px; height: 28px; }
 .cm-wa svg { color: #25d366; }
 .cm-btn span { display: block; font-size: 15px; font-weight: 700; color: #fff; }
 .cm-btn small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+/* --- Link Area Staff (discreto) --- */
+.staff-link{
+  display:inline-flex;align-items:center;gap:6px;
+  color:rgba(255,255,255,.42);
+  font-size:.82rem;font-weight:600;text-decoration:none;
+  padding:4px 10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;
+  transition:color .2s,border-color .2s,background .2s;
+}
+.staff-link:hover{
+  color:#fff;border-color:rgba(138,69,255,.6);background:rgba(138,69,255,.14);
+}
+.staff-link svg{opacity:.85}
+.staff-link-hero{margin-left:auto}

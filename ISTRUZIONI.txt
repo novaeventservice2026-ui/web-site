@@ -36,3 +36,22 @@ NOTE
 - I link tra le pagine sono relativi (servizi.html, artisti.html, ...): non spostare i file
   fuori dalla cartella e non rinominarli.
 - I recapiti (email e WhatsApp) e i social dei DJ sono già quelli reali.
+
+AREA STAFF (portale preventivi)
+-------------------------------
+- Sul sito c'e' un bottone "Staff" (in fondo alle pagine e nella home).
+- Apre /staff/ : il portale preventivi, protetto da una password.
+- Password: impostata nel portale in  src/staff-config.ts  (CAMBIALA! vedi sotto)
+- I dati dei preventivi restano nel browser di chi usa il portale (per dispositivo).
+  Per spostarli tra PC/telefono usa Backup e ripristino (file JSON) dentro il portale.
+
+CAMBIARE LA PASSWORD / AGGIORNARE IL PORTALE
+- Nel progetto "Portale preventivi":
+  1) apri  src/staff-config.ts  e cambia la riga  PASSWORD_STAFF = '...'
+  2) esegui:  npm run deploy:staff
+     (ricrea il portale e aggiorna la cartella  web-site/staff/ )
+- Poi ripubblica il sito (commit+push su GitHub, oppure trascina la cartella su Netlify).
+
+NOTA SICUREZZA: la password e' un blocco "leggero" lato browser: tiene fuori i
+visitatori occasionali ma non protegge da chi e' esperto. Per una protezione vera
+si puo' mettere davanti a /staff un gate come Cloudflare Access (gratis).
